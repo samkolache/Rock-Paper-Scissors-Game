@@ -1,0 +1,109 @@
+html, *, body { 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+}
+
+p {
+    font-family: 'Grenze';
+    color: #757474;
+    font-weight: 600;
+}
+
+
+.heading {
+    background-color: #3e236e;
+    margin-top: 0;
+    height: 92px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading > p {
+    font-size: 48px;
+}
+
+.secondary-heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.secondary-heading > p {
+    font-size: 48px;
+}
+
+.choice-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.box {
+    width: 262px;
+    height: 295px;
+    border: 2px solid #3e236e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice {
+    width:266px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.img-size {
+    width: 200px;
+    height: 200px;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.score > p {
+    font-size: 35px;
+}
+
+.tally {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.tally > p {
+    font-size: 40px;
+}
+
+.tally-counter {
+    display: flex;
+    justify-content: center;
+    gap: 165px;
+}
+
+.tally-counter > p {
+    font-size: 40px;
+}
+
+.contribution {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 90px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
