@@ -88,10 +88,15 @@ p {
     display: flex;
     justify-content: center;
     gap: 165px;
+    margin-right: 22px
 }
 
 .tally-counter > p {
     font-size: 40px;
+}
+
+.tally-counter > :nth-child(2) {
+    margin-right: 10px;
 }
 
 .contribution {
