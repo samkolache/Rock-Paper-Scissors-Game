@@ -7,6 +7,7 @@ html {
     background-color: black;
 }
 
+
 p {
     font-family: 'Grenze';
     color: #757474;
@@ -96,13 +97,24 @@ p {
 }
 
 .tally-counter > :nth-child(2) {
-    margin-right: 10px;
+    margin-right: 10git px;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result > p {
+    font-size: 30px;
 }
 
 .contribution {
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .social-links {
@@ -110,5 +122,5 @@ p {
     justify-content: flex-end;
     gap: 90px;
     margin-right: 20px;
-    margin-bottom: 10px;
+    margin-top: -20px;
 }
