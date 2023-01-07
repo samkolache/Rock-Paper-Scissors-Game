@@ -15,6 +15,7 @@ p {
 }
 
 
+
 .heading {
     background-color: #3e236e;
     margin-top: 0;
@@ -58,6 +59,17 @@ p {
     width:266px;
     text-align: center;
     font-size: 40px;
+}
+
+.rock, 
+.paper, 
+.scissors { 
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.rock:hover, .paper:hover, .scissors:hover {
+    transform: scale(1.1);
 }
 
 .img-size {
@@ -123,4 +135,15 @@ p {
     gap: 90px;
     margin-right: 20px;
     margin-top: -20px;
+}
+
+.butt {
+    font-size: 30px;
+    font-family: 'Grenze';
+    color: #757474;
+    font-weight: 600;
+}
+
+#playerScore span {
+    color: red;
 }
