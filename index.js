@@ -31,12 +31,12 @@ function playGame(user, comp) {
         if(playerScore === 5 || computerScore === 5) {
             endGame();
         } else if(user === comp) {
-            document.querySelector(".result").innerHTML = "<span class = 'butt'>It's a tie, oh no!</span>"
+            document.querySelector(".result").innerHTML = "<span class = 'default'>It's a tie, oh no!</span>"
         } else if(user === "rock" && comp === "scissors" || user === "paper" && comp === "rock" || user === "scissors" && comp === "paper"   ) {
-            document.querySelector(".result").innerHTML = "<span class = 'butt'>Player wins, hooray!</span>"
+            document.querySelector(".result").innerHTML = "<span class = 'default'>Player wins, hooray!</span>"
             increaseTally('user');
         } else if(user === "scissors" && comp === "rock" || user === "rock" && comp === "paper" || user === "paper" && comp === "scissors") {
-            document.querySelector(".result").innerHTML = "<span class = 'butt'>Computer wins, boo hoo</span>"
+            document.querySelector(".result").innerHTML = "<span class = 'default'>Computer wins, boo hoo</span>"
             increaseTally('computer');
         }
         
@@ -44,10 +44,10 @@ function playGame(user, comp) {
 
 function endGame() {
     if(playerScore > computerScore) {
-        document.querySelector(".result").innerHTML = "<span class = 'butt'>Player wins, Congrats!</span>"
+        document.querySelector(".result").innerHTML = "<span class = 'default'>Player wins, Congrats!</span>"
         resetGame();
     } else if(playerScore < computerScore) {
-        document.querySelector(".result").innerHTML = "<span class = 'butt'>Computer wins, sorry!</span>"
+        document.querySelector(".result").innerHTML = "<span class = 'default'>Computer wins, sorry!</span>"
         resetGame();
     }
 
@@ -61,7 +61,7 @@ function resetGame() {
         document.getElementById('count1').textContent = playerScore
         computerScore = 0;
         document.getElementById('count2').textContent = computerScore;
-        document.querySelector(".result").innerHTML = "<span class = 'butt'>Start the game!</span>"
+        document.querySelector(".result").innerHTML = "<span class = 'default'>Start the game!</span>"
     })
 }
 
