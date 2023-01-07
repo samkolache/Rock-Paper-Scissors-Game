@@ -27,16 +27,28 @@ document.querySelector(".scissors").addEventListener("click", event => {
 })
 
 function playGame(user, comp) {
-    if(user === comp) {
-        document.querySelector(".result").innerHTML = "<span class = 'butt'>It's a tie, oh no!</span>"
-    } else if(user === "rock" && comp === "scissors" || user === "paper" && comp === "rock" || user === "scissors" && comp === "paper"   ) {
-        document.querySelector(".result").innerHTML = "<span class = 'butt'>Player wins, hooray!</span>"
-        increaseTally('user');
-    } else if(user === "scissors" && comp === "rock" || user === "rock" && comp === "paper" || user === "paper" && comp === "scissors") {
-        document.querySelector(".result").innerHTML = "<span class = 'butt'>Computer wins, boo hoo</span>"
-        increaseTally('computer');
+        if(playerScore === 5 || computerScore === 5) {
+            endGame();
+        } else if(user === comp) {
+            document.querySelector(".result").innerHTML = "<span class = 'butt'>It's a tie, oh no!</span>"
+        } else if(user === "rock" && comp === "scissors" || user === "paper" && comp === "rock" || user === "scissors" && comp === "paper"   ) {
+            document.querySelector(".result").innerHTML = "<span class = 'butt'>Player wins, hooray!</span>"
+            increaseTally('user');
+        } else if(user === "scissors" && comp === "rock" || user === "rock" && comp === "paper" || user === "paper" && comp === "scissors") {
+            document.querySelector(".result").innerHTML = "<span class = 'butt'>Computer wins, boo hoo</span>"
+            increaseTally('computer');
+        }
+        
+}
+
+function endGame() {
+    if(playerScore > computerScore) {
+        document.querySelector(".result").innerHTML = "<span class = 'butt'>Player wins, Congrats!</span>"
+    } else if(playerScore < computerScore) {
+        document.querySelector(".result").innerHTML = "<span class = 'butt'>Computer wins, sorry!</span>"
     }
 }
+
 
 function increaseTally (winner) {
     if(winner === 'user') {
@@ -44,7 +56,7 @@ function increaseTally (winner) {
         document.getElementById('count1').textContent = playerScore
     } else if(winner === 'computer') {
         computerScore++
-        document.getElementById('count2').textContent = computerScore
+        document.getElementById('count2').textContent = computerScore;
     }
 }
 
