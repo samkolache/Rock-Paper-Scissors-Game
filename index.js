@@ -3,6 +3,7 @@ let computerChoice = "";
 let playerScore = 0;
 let computerScore = 0;
 const possibleChoices = ['rock', 'paper', 'scissors'];
+const resetBtn = document.querySelector(".reset-btn");
 
 
 
@@ -44,9 +45,24 @@ function playGame(user, comp) {
 function endGame() {
     if(playerScore > computerScore) {
         document.querySelector(".result").innerHTML = "<span class = 'butt'>Player wins, Congrats!</span>"
+        resetGame();
     } else if(playerScore < computerScore) {
         document.querySelector(".result").innerHTML = "<span class = 'butt'>Computer wins, sorry!</span>"
+        resetGame();
     }
+
+}
+
+function resetGame() {
+    resetBtn.style.opacity = "100"
+    resetBtn.addEventListener('click', event => {
+        resetBtn.style.opacity = "0";
+        playerScore = 0;
+        document.getElementById('count1').textContent = playerScore
+        computerScore = 0;
+        document.getElementById('count2').textContent = computerScore;
+        document.querySelector(".result").innerHTML = "<span class = 'butt'>Start the game!</span>"
+    })
 }
 
 

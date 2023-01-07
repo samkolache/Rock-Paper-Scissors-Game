@@ -122,6 +122,30 @@ p {
     font-size: 30px;
 }
 
+.reset {
+    display: flex;
+    justify-content: center;
+}
+
+.reset-btn {
+    background-color: #3e236e;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-family: 'Grenze';
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.reset-btn:hover {
+    color: white;
+}
+
+
+
 .contribution {
     display: flex;
     justify-content: flex-end;
