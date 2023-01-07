@@ -1,2 +1,2 @@
 # Rock-Paper-Scissors-Game
-Fully interactive Rock, Paper, Scissors Game
+This is a fully functional Rock, Paper, Scissors game. I created this game to practice my HTML, CSS, and Javascript. I used flexbox properties to create the layout of the webpage. I used purple and black as the main colors of my page, as it created a dark and omnious version of the playful game. I used DOM manipulation to make the values and winner prompt change each time a round is played. This was a very fun game to create as it helped me become more comfortable with using DOM and JS.
