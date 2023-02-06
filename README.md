@@ -22,4 +22,4 @@ Link to game: https://samkolache.github.io/Rock-Paper-Scissors-Game/
 1. User loads onto the page and starts the game by making a selection
 2. User keeps making selections until the score reaches 5
 3. The page declares the winner
-4. A restart button appears, allowing the user to play again.
+4. A restart button appears, allowing the user to play again
