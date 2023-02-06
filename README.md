@@ -19,7 +19,7 @@ I created this project as part of my journey through the Odin Project curriculum
 Link to game: https://samkolache.github.io/Rock-Paper-Scissors-Game/
 
 ### User Instructions
-1. User loads onto the page and starts the game by making a selection
-2. User keeps making selections until the score reaches 5
-3. The page declares the winner
-4. A restart button appears, allowing the user to play again
+    1. User loads onto the page and starts the game by making a selection
+    2. User keeps making selections until the score reaches 5
+    3. The page declares the winner
+    4. A restart button appears, allowing the user to play again
